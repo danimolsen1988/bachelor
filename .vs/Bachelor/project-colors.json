@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "272292e9-b981-432d-a281-899600798f7d": {
+      "ProjectGuid": "272292e9-b981-432d-a281-899600798f7d",
+      "DisplayName": "Functions.StreamProcessing",
+      "ColorIndex": 0
+    },
+    "0c99d7aa-0628-42b3-af48-11ae2583ee10": {
+      "ProjectGuid": "0c99d7aa-0628-42b3-af48-11ae2583ee10",
+      "DisplayName": "Bachelor.Common",
+      "ColorIndex": 1
+    },
+    "75312c03-8998-4497-bbe0-72f30cfe858f": {
+      "ProjectGuid": "75312c03-8998-4497-bbe0-72f30cfe858f",
+      "DisplayName": "SimulatorTest",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
