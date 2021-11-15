@@ -9,6 +9,9 @@ using Newtonsoft.Json;
 
 namespace SimulatorTest
 {
+    /// <summary>
+    /// ConfigureAwait(false) configures the task so that continuation after the await does not have to be run in the caller context, therefore avoiding any possible deadlocks.
+    /// </summary>
     public class SimulatedDevice
     {
         // The amount of time to delay between sending telemetry.
