@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZvdAqRUo6EwaKWtb8+Hm0ZGkJdI38Zt5M4re4s/w4ZpF+64Z64Fa9koZUJgNs+0nWgQtXeKSb5IzXAA2/qSBrw==",
+  "success": true,
+  "projectFilePath": "C:\\Bachelor\\repo\\bachelor\\ManagementWebAPI\\ManagementWebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dani Olsen\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Dani Olsen\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Dani Olsen\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Dani Olsen\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Dani Olsen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Dani Olsen\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

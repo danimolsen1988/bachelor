@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bachelor.Common.Models
 {
-    public class OpsDevice
+    public class OpsDeviceTelemetry
     {
         // <summary>
         /// The partitionKey property represents a synthetic composite partition key for the
@@ -23,7 +23,8 @@ namespace Bachelor.Common.Models
         [JsonProperty] public string id { get; set; }
         [JsonProperty] public string entityType => WellKnown.EntityTypes.Ops;
         [JsonProperty] public string deviceId { get; set; }
+        [JsonProperty] public DateTime timestamp { get; set; }
         //All measurements are handled as a list and each sensor/subdevice has it's own id
-        [JsonProperty] public List<SubDevice> measurements { get; set; }
+        [JsonProperty] public List<SubDeviceTelemetry> measurements { get; set; }
     }
 }

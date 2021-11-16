@@ -15,7 +15,17 @@
       "ProjectGuid": "75312c03-8998-4497-bbe0-72f30cfe858f",
       "DisplayName": "SimulatorTest",
       "ColorIndex": 2
+    },
+    "d4f33c22-97cd-4616-b860-4bacc87d75f6": {
+      "ProjectGuid": "d4f33c22-97cd-4616-b860-4bacc87d75f6",
+      "DisplayName": "ManagementWebAPI",
+      "ColorIndex": 3
+    },
+    "10713112-cb93-4ebf-936b-3180318c8fae": {
+      "ProjectGuid": "10713112-cb93-4ebf-936b-3180318c8fae",
+      "DisplayName": "ManagementWebApp",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

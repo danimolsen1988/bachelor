@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Bachelor.Common;
 using Bachelor.Common.Models;
 using Microsoft.Azure.Devices.Client;
 using Newtonsoft.Json;
@@ -41,12 +42,10 @@ namespace SimulatorTest
         private async Task SendDataToHub(CancellationToken cancellationToken) {
             //TODO 1
             while (!_localCancellationSource.IsCancellationRequested) {
-                OpsDevice data = new OpsDevice();
-                data.deviceId = "";
-                data.measurements = new List<SubDevice>();
-                data.measurements.Add(new SubDevice() { subId = "", measurement = 1 });
-
-                await SendEvent(JsonConvert.SerializeObject(data), cancellationToken).ConfigureAwait(false);
+                //Generate Data
+                OpsDeviceTelemetry deviceTelemetry = DataGenerator.GenerateData();
+                //Send Data
+                await SendEvent(JsonConvert.SerializeObject(deviceTelemetry), cancellationToken).ConfigureAwait(false);
                 await Task.Delay(CycleTime);
             }
         }
@@ -60,6 +59,8 @@ namespace SimulatorTest
                     await sendEventAsync.ConfigureAwait(false);
                 }
             }
+            //print json to the console
+            Program.PrintConsole(message);
         }
     }
 }

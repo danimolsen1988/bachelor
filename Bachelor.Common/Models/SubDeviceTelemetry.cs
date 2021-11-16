@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Bachelor.Common.Models
 {
-    public class SubDevice
+    public class SubDeviceTelemetry
     {
         [JsonProperty] public string subId { get; set; }
         [JsonProperty] public double measurement { get; set; }

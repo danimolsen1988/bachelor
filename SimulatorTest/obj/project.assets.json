@@ -6572,19 +6572,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vbacc\\.nuget\\packages\\": {}
+    "C:\\Users\\Dani Olsen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\SimulatorTest\\SimulatorTest.csproj",
+      "projectUniqueName": "C:\\Bachelor\\repo\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
       "projectName": "SimulatorTest",
-      "projectPath": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\SimulatorTest\\SimulatorTest.csproj",
-      "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\SimulatorTest\\obj\\",
+      "projectPath": "C:\\Bachelor\\repo\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
+      "packagesPath": "C:\\Users\\Dani Olsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Bachelor\\repo\\bachelor\\SimulatorTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dani Olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6598,8 +6598,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\vbacc\\source\\repos\\Bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
-              "projectPath": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
+            "C:\\Bachelor\\repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
+              "projectPath": "C:\\Bachelor\\repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
             }
           }
         }
@@ -6646,7 +6646,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
