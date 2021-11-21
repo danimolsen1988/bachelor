@@ -25,7 +25,22 @@
       "ProjectGuid": "10713112-cb93-4ebf-936b-3180318c8fae",
       "DisplayName": "ManagementWebApp",
       "ColorIndex": 4
+    },
+    "b397d684-ad80-4600-90d2-cfa793a91760": {
+      "ProjectGuid": "b397d684-ad80-4600-90d2-cfa793a91760",
+      "DisplayName": "ManagementWebAppMVC",
+      "ColorIndex": 5
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "88db1b04-ba03-47fa-a0cd-6b0efbea9c40": {
+      "ProjectGuid": "88db1b04-ba03-47fa-a0cd-6b0efbea9c40",
+      "DisplayName": "testingLocal",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 7
 }

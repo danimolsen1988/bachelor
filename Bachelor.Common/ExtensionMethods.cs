@@ -45,15 +45,15 @@ namespace Bachelor.Common
         /// <typeparam name="T">The Type (POCO) to which the Document should be converted.</typeparam>
         /// <param name="document">The Cosmos DB Document to convert.</param>
         /// <returns></returns>
-        public static async Task<T> ReadAsAsync<T>(this Document document)
-        {
-            using (var ms = new MemoryStream())
-            using (var reader = new StreamReader(ms))
-            {
-                document.SaveTo(ms);
-                ms.Position = 0;
-                return JsonConvert.DeserializeObject<T>(await reader.ReadToEndAsync());
-            }
-        }
+        //public static async Task<T> ReadAsAsync<T>(this Document document)
+        //{
+        //    using (var ms = new MemoryStream())
+        //    using (var reader = new StreamReader(ms))
+        //    {
+        //        document.SaveTo(ms);
+        //        ms.Position = 0;
+        //        return JsonConvert.DeserializeObject<T>(await reader.ReadToEndAsync());
+        //    }
+        //}
     }
 }

@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Dani Olsen\\.nuget\\packages\\": {}
+    "C:\\Users\\vbacc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Bachelor\\repo\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
+      "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
       "projectName": "ManagementWebAppMVC",
-      "projectPath": "C:\\Bachelor\\repo\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
-      "packagesPath": "C:\\Users\\Dani Olsen\\.nuget\\packages\\",
-      "outputPath": "C:\\Bachelor\\repo\\bachelor\\ManagementWebAppMVC\\obj\\",
+      "projectPath": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
+      "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\ManagementWebAppMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dani Olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
       }
     }
   }

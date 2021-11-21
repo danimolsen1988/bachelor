@@ -10,6 +10,8 @@ namespace SimulatorTest
         private static readonly AutoResetEvent WaitHandle = new AutoResetEvent(false);
         private static SimulatedDevice? _simulatedDevice;
 
+        private static string connString = "HostName=iot-hub-bachelor.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=FwhPgFZp4Ei98rCj7EQHwZdwtD268r/Jjbul3LMcKfk=";
+
         private static readonly object _lock = new object();
 
         static async Task Main(string[] args) {
@@ -28,7 +30,7 @@ namespace SimulatorTest
             try
             {
                 //Make sure devices exists in iothub - Only using a single device for simulated data
-                var deviceKey = await DeviceManager.RegisterDeviceAsync("iothubconnstring", DataGenerator.GetDeviceId());
+                var deviceKey = await DeviceManager.RegisterDeviceAsync(connString, DataGenerator.GetDeviceId());
 
                 //SimulatedDevice simulatedDevice = new SimulatedDevice(DeviceManager.HostName, "deviceID", deviceKey);
                 _simulatedDevice = new SimulatedDevice(DeviceManager.HostName, DataGenerator.GetDeviceId(), deviceKey);

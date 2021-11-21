@@ -1,0 +1,15 @@
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.GlobalUsings.g.cs
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.csproj.AssemblyReference.cache
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.AssemblyInfoInputs.cache
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.AssemblyInfo.cs
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.csproj.CoreCompileInputs.cache
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\bin\Debug\net6.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\bin\Debug\net6.0\Cosmos.CRTCompat.dll
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\bin\Debug\net6.0\Bachelor.Common.deps.json
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\bin\Debug\net6.0\Bachelor.Common.dll
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\bin\Debug\net6.0\ref\Bachelor.Common.dll
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\bin\Debug\net6.0\Bachelor.Common.pdb
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.dll
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Debug\net6.0\ref\Bachelor.Common.dll
+C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.pdb

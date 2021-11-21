@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bachelor.Common", "Bachelor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimulatorTest", "SimulatorTest\SimulatorTest.csproj", "{75312C03-8998-4497-BBE0-72F30CFE858F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagementWebAppMVC", "ManagementWebAppMVC\ManagementWebAppMVC.csproj", "{B397D684-AD80-4600-90D2-CFA793A91760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagementWebAppMVC", "ManagementWebAppMVC\ManagementWebAppMVC.csproj", "{B397D684-AD80-4600-90D2-CFA793A91760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testingLocal", "testingLocal\testingLocal.csproj", "{88DB1B04-BA03-47FA-A0CD-6B0EFBEA9C40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B397D684-AD80-4600-90D2-CFA793A91760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B397D684-AD80-4600-90D2-CFA793A91760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B397D684-AD80-4600-90D2-CFA793A91760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DB1B04-BA03-47FA-A0CD-6B0EFBEA9C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DB1B04-BA03-47FA-A0CD-6B0EFBEA9C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DB1B04-BA03-47FA-A0CD-6B0EFBEA9C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88DB1B04-BA03-47FA-A0CD-6B0EFBEA9C40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
