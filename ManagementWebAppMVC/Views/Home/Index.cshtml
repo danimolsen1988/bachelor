@@ -1,35 +1,26 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+      
 
-        <!-- SELECT2 EXAMPLE -->
         <div class="card card-default">
           <div class="card-header">
-            <h3 class="card-title">Select2 (Bootstrap4 Theme)</h3>
-
-            <div class="card-tools">
-              <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                <i class="fas fa-minus"></i>
-              </button>
-              <button type="button" class="btn btn-tool" data-card-widget="remove">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
+            <h3 class="card-title">Devices</h3>
           </div>
           <!-- /.card-header -->
           <div class="card-body">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label>Minimal</label>
+                  <label>Devices</label>
                   <select class="form-control select2bs4" style="width: 100%;">
-                    <option selected="selected">Alabama</option>
+                    @*<option selected="selected">Alabama</option>
                     <option>Alaska</option>
                     <option>California</option>
                     <option>Delaware</option>
                     <option>Tennessee</option>
                     <option>Texas</option>
-                    <option>Washington</option>
+                    <option>Washington</option>*@
                   </select>
                 </div>               
               </div>             
@@ -44,7 +35,7 @@
             <!-- LINE CHART -->
             <div class="card card-info">
               <div class="card-header">
-                <h3 class="card-title">Line Chart</h3>
+                <h3 class="card-title">Telemetry</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -70,6 +61,35 @@
 @section Scripts {
     <script>
   $(function () {
+
+     //Initialize Select2 Elements
+    //$('.select2').select2()
+
+    //Initialize Select2 Elements
+    //$('.select2bs4').select2({
+    //  theme: 'bootstrap4'
+    //})
+    $('.select2bs4').select2({
+        ajax: {
+            url: '@Url.Action("getAllDevices")',
+            dataType: 'json',
+            processResults: function (data) {
+                // Transforms the top-level key of the response object from 'items' to 'results'                
+                return {                    
+                    results: data
+                };
+            }
+        }
+    });
+
+  $('.select2bs4').on("select2:selecting", function(e) { 
+   // what you would like to happen
+   var data = e.params.data; //not the correct way!
+   var data1 = e.params.args.data;
+   
+   updateData();
+  });
+
     /* ChartJS
      * -------
      * Here we will create a few charts using ChartJS
@@ -77,11 +97,39 @@
 
    
    
+    //var areaChartData = {
+    //  labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    //  datasets: [
+    //    {
+    //      label               : 'Digital Goods',
+    //      backgroundColor     : 'rgba(60,141,188,0.9)',
+    //      borderColor         : 'rgba(60,141,188,0.8)',
+    //      pointRadius          : false,
+    //      pointColor          : '#3b8bba',
+    //      pointStrokeColor    : 'rgba(60,141,188,1)',
+    //      pointHighlightFill  : '#fff',
+    //      pointHighlightStroke: 'rgba(60,141,188,1)',
+    //      data                : [28, 48, 40, 19, 86, 27, 90]
+    //    },
+    //    {
+    //      label               : 'Electronics',
+    //      backgroundColor     : 'rgba(210, 214, 222, 1)',
+    //      borderColor         : 'rgba(210, 214, 222, 1)',
+    //      pointRadius         : false,
+    //      pointColor          : 'rgba(210, 214, 222, 1)',
+    //      pointStrokeColor    : '#c1c7d1',
+    //      pointHighlightFill  : '#fff',
+    //      pointHighlightStroke: 'rgba(220,220,220,1)',
+    //      data                : [65, 59, 80, 81, 56, 55, 40]
+    //    },
+    //  ]
+    //}
+
     var areaChartData = {
-      labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+      labels  : [],
       datasets: [
         {
-          label               : 'Digital Goods',
+          label               : '',
           backgroundColor     : 'rgba(60,141,188,0.9)',
           borderColor         : 'rgba(60,141,188,0.8)',
           pointRadius          : false,
@@ -89,18 +137,7 @@
           pointStrokeColor    : 'rgba(60,141,188,1)',
           pointHighlightFill  : '#fff',
           pointHighlightStroke: 'rgba(60,141,188,1)',
-          data                : [28, 48, 40, 19, 86, 27, 90]
-        },
-        {
-          label               : 'Electronics',
-          backgroundColor     : 'rgba(210, 214, 222, 1)',
-          borderColor         : 'rgba(210, 214, 222, 1)',
-          pointRadius         : false,
-          pointColor          : 'rgba(210, 214, 222, 1)',
-          pointStrokeColor    : '#c1c7d1',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(220,220,220,1)',
-          data                : [65, 59, 80, 81, 56, 55, 40]
+          data                : []
         },
       ]
     }
@@ -109,18 +146,26 @@
       maintainAspectRatio : false,
       responsive : true,
       legend: {
-        display: false
+        display: true
       },
       scales: {
         xAxes: [{
           gridLines : {
             display : false,
-          }
-        }],
+          },
+          scaleLabel: {
+            display: true,
+            labelString: 'time'
+         },
+        }],        
         yAxes: [{
           gridLines : {
             display : false,
-          }
+          },
+          scaleLabel: {
+            display: true,
+            labelString: 'probability'
+         },
         }]
       }
     }
@@ -133,7 +178,7 @@
     var lineChartOptions = $.extend(true, {}, areaChartOptions)
     var lineChartData = $.extend(true, {}, areaChartData)
     lineChartData.datasets[0].fill = false;
-    lineChartData.datasets[1].fill = false;
+    //lineChartData.datasets[1].fill = false;
     lineChartOptions.datasetFill = false
 
     var lineChart = new Chart(lineChartCanvas, {
@@ -141,6 +186,18 @@
       data: lineChartData,
       options: lineChartOptions
     })
+
+    function updateData() {
+        data2 = {
+            
+        };
+        lineChart.data.labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'];
+        lineChart.data.datasets[0].data = [28, 48, 40, 19, 86, 27, 90, 120, 8];
+        lineChart.data.datasets[0].label = 'My device';
+        lineChart.update();
+    }
+
+
     })
 </script>
 }              

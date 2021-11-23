@@ -1001,19 +1001,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vbacc\\.nuget\\packages\\": {}
+    "C:\\Users\\Dani Olsen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
+      "projectUniqueName": "C:\\Bachelor\\new-repo\\Bachelor.Common\\Bachelor.Common.csproj",
       "projectName": "Bachelor.Common",
-      "projectPath": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
-      "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vbacc\\source\\repos\\Bachelor\\Bachelor.Common\\obj\\",
+      "projectPath": "C:\\Bachelor\\new-repo\\Bachelor.Common\\Bachelor.Common.csproj",
+      "packagesPath": "C:\\Users\\Dani Olsen\\.nuget\\packages\\",
+      "outputPath": "C:\\Bachelor\\new-repo\\Bachelor.Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dani Olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1063,7 +1063,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-rc.2.21505.57\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

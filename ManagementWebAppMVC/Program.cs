@@ -1,7 +1,13 @@
+using ManagementWebAppMVC.Services;
+using Microsoft.Extensions.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSingleton<ICosmosDBService>(CosmosDBService.InitializeCosmosClientInstance(builder.Configuration)); //CHECK IF THIS IS CORRECT !!!!!
+//builder.Services.AddDbContext<>
 
 var app = builder.Build();
 
@@ -23,5 +29,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
 
 app.Run();
