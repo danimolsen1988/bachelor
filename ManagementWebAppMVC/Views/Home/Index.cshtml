@@ -1,37 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-}
-      
-
-        <div class="card card-default">
-          <div class="card-header">
-            <h3 class="card-title">Devices</h3>
-          </div>
-          <!-- /.card-header -->
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label>Devices</label>
-                  <select class="form-control select2bs4" style="width: 100%;">
-                    @*<option selected="selected">Alabama</option>
-                    <option>Alaska</option>
-                    <option>California</option>
-                    <option>Delaware</option>
-                    <option>Tennessee</option>
-                    <option>Texas</option>
-                    <option>Washington</option>*@
-                  </select>
-                </div>               
-              </div>             
-              <!-- /.col -->
-            </div>
-            <!-- /.row -->
-          </div>         
-        
-        </div>
-        <!-- /.card -->
-
+}    
             <!-- LINE CHART -->
             <div class="card card-info">
               <div class="card-header">
@@ -47,6 +16,17 @@
                 </div>
               </div>
               <div class="card-body">
+                  <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Devices</label>
+                  <select class="form-control select2bs4" style="width: 100%;">                   
+                  </select>
+                </div>               
+              </div>             
+              <!-- /.col -->
+            </div>
+            <!-- /.row -->
                 <div class="chart">
                   <canvas id="lineChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
                 </div>
@@ -71,7 +51,7 @@
     //})
     $('.select2bs4').select2({
         ajax: {
-            url: '@Url.Action("getAllDevices")',
+            url: '@Url.Action("GetAllDevices")',
             dataType: 'json',
             processResults: function (data) {
                 // Transforms the top-level key of the response object from 'items' to 'results'                
@@ -84,10 +64,23 @@
 
   $('.select2bs4').on("select2:selecting", function(e) { 
    // what you would like to happen
-   var data = e.params.data; //not the correct way!
+   //var data = e.params.data; //not the correct way!
    var data1 = e.params.args.data;
    
-   updateData();
+   //updateData();
+
+   $.ajax({
+        url: '@Url.Action("GetAllTelemetryForDevice")',
+        type: 'POST',
+        dataType: 'json',
+        data: { deviceId: data1.text, unitType: data1.unitType},
+        success: function(data) {
+            //alert(data.labels);
+            updateData(data);
+        }
+   });
+
+
   });
 
     /* ChartJS
@@ -131,8 +124,7 @@
         {
           label               : '',
           backgroundColor     : 'rgba(60,141,188,0.9)',
-          borderColor         : 'rgba(60,141,188,0.8)',
-          pointRadius          : false,
+          borderColor         : 'rgba(60,141,188,0.8)',          
           pointColor          : '#3b8bba',
           pointStrokeColor    : 'rgba(60,141,188,1)',
           pointHighlightFill  : '#fff',
@@ -149,14 +141,16 @@
         display: true
       },
       scales: {
-        xAxes: [{
+        xAxes: [{                    
           gridLines : {
             display : false,
           },
           scaleLabel: {
             display: true,
-            labelString: 'time'
+            labelString: 'Time'
          },
+         type: 'time',
+         distribution: 'series',         
         }],        
         yAxes: [{
           gridLines : {
@@ -164,12 +158,21 @@
           },
           scaleLabel: {
             display: true,
-            labelString: 'probability'
+            labelString: 'Unit'
          },
         }]
       }
     }
 
+    //time: {
+    //        tooltipFormat: 'YYYY-MM-dd HH:mm:SS',
+    //        displayFormats: {
+    //            millisecond: 'HH:mm:ss.SSS',
+    //            second: 'HH:mm:ss',
+    //            minute: 'HH:mm',
+    //            hour: 'HH'
+    //        },
+    //  },
 
     //-------------
     //- LINE CHART -
@@ -187,13 +190,21 @@
       options: lineChartOptions
     })
 
-    function updateData() {
+    function updateData11() {
         data2 = {
             
         };
         lineChart.data.labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'];
         lineChart.data.datasets[0].data = [28, 48, 40, 19, 86, 27, 90, 120, 8];
         lineChart.data.datasets[0].label = 'My device';
+        lineChart.update();
+    }
+
+    function updateData(data) {
+        lineChart.data.labels = data.labels;
+        lineChart.data.datasets[0].data = data.data;
+        lineChart.data.datasets[0].label = data.device;
+        lineChart.options.scales.yAxes[0].scaleLabel.labelString = data.unitType;
         lineChart.update();
     }
 

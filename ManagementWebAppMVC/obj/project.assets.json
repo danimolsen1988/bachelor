@@ -2392,19 +2392,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dani Olsen\\.nuget\\packages\\": {}
+    "C:\\Users\\vbacc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Bachelor\\new-repo\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
+      "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
       "projectName": "ManagementWebAppMVC",
-      "projectPath": "C:\\Bachelor\\new-repo\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
-      "packagesPath": "C:\\Users\\Dani Olsen\\.nuget\\packages\\",
-      "outputPath": "C:\\Bachelor\\new-repo\\ManagementWebAppMVC\\obj\\",
+      "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
+      "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dani Olsen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2418,8 +2418,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Bachelor\\new-repo\\Bachelor.Common\\Bachelor.Common.csproj": {
-              "projectPath": "C:\\Bachelor\\new-repo\\Bachelor.Common\\Bachelor.Common.csproj"
+            "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
+              "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
             }
           }
         }

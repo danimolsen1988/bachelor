@@ -13,3 +13,17 @@ C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor
 C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.dll
 C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Release\net6.0\ref\Bachelor.Common.dll
 C:\Users\vbacc\source\repos\Bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.pdb
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\bin\Release\net6.0\Microsoft.Azure.Cosmos.ServiceInterop.dll
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\bin\Release\net6.0\Cosmos.CRTCompat.dll
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\bin\Release\net6.0\Bachelor.Common.deps.json
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\bin\Release\net6.0\Bachelor.Common.dll
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\bin\Release\net6.0\ref\Bachelor.Common.dll
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\bin\Release\net6.0\Bachelor.Common.pdb
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.csproj.AssemblyReference.cache
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.AssemblyInfoInputs.cache
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.AssemblyInfo.cs
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.csproj.CoreCompileInputs.cache
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.dll
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\ref\Bachelor.Common.dll
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.pdb
