@@ -17,6 +17,8 @@ namespace SimulatorTest
         static async Task Main(string[] args) {
             Console.WriteLine("Hello, World!");
 
+            using (var context = new SqlDBContext()
+
             // Handle Control+C or Control+Break.
             Console.CancelKeyPress += (o, e) =>
             {                
