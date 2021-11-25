@@ -2439,7 +2439,7 @@
       ]
     },
     "Microsoft.Win32.Registry/4.5.0": {
-      "sha512": "+FWlwd//+Tt56316p00hVePBCouXyEzT86Jb3+AuRotTND0IYn0OO3obs1gnQEs/txEnt+rF2JBGLItTG+Be6A==",
+      "sha512": "vduxuHEqRgRrTE8wYG8Wxj/+6wwzddOmZzjKZx6rFMc/91aUBxI5etAFYxesoNaIja5NpgSTcnk6cN8BeYXf9A==",
       "type": "package",
       "path": "microsoft.win32.registry/4.5.0",
       "files": [
@@ -4070,7 +4070,7 @@
       ]
     },
     "System.Net.Http/4.3.0": {
-      "sha512": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
+      "sha512": "Z1UfSF6dlpCdZdxh6LeoGlYH+q6ptG/iiIWgUUeKhE3DbQACmZkU7Sz2nOX0qdHjz72MOdYRbkSJ5Qwl6sZgvg==",
       "type": "package",
       "path": "system.net.http/4.3.0",
       "files": [
@@ -4389,7 +4389,7 @@
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "sha512": "MNcaYxUJvUcoXOa+jgKl/GDw/Mh+wMrxDjW4dre7qrp35LUGTjUBNtZsNjxsWX592ocdyqt1X5hMJB+5OStoYw==",
       "type": "package",
       "path": "system.numerics.vectors/4.5.0",
       "files": [
@@ -6326,7 +6326,7 @@
       ]
     },
     "System.ValueTuple/4.5.0": {
-      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "sha512": "fa3P1cPe2SlrjCjJ/yc3mcXkDj4GQORmileNFYBtBZh2qddzwRubagAkj8yz/yF9oLvJVqaZYar9l2SCqNKDJg==",
       "type": "package",
       "path": "system.valuetuple/4.5.0",
       "files": [
@@ -6572,19 +6572,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vbacc\\.nuget\\packages\\": {}
+    "C:\\Users\\Dani\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
+      "projectUniqueName": "E:\\Bachelor-GIT\\new-repo\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
       "projectName": "SimulatorTest",
-      "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
-      "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\SimulatorTest\\obj\\",
+      "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
+      "packagesPath": "C:\\Users\\Dani\\.nuget\\packages\\",
+      "outputPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\SimulatorTest\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6598,8 +6602,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
-              "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
+            "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
+              "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
             }
           }
         }

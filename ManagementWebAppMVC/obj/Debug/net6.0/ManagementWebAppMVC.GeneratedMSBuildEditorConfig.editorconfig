@@ -8,41 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ManagementWebAppMVC
 build_property.RootNamespace = ManagementWebAppMVC
-build_property.ProjectDir = C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\
+build_property.ProjectDir = E:\Bachelor-GIT\new-repo\bachelor\ManagementWebAppMVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC
+build_property.MSBuildProjectDirectory = E:\Bachelor-GIT\new-repo\bachelor\ManagementWebAppMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/vbacc/source/repos/newVersion/bachelor/ManagementWebAppMVC/Views/Home/Index.cshtml]
+[E:/Bachelor-GIT/new-repo/bachelor/ManagementWebAppMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vbacc/source/repos/newVersion/bachelor/ManagementWebAppMVC/Views/Home/Privacy.cshtml]
+[E:/Bachelor-GIT/new-repo/bachelor/ManagementWebAppMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vbacc/source/repos/newVersion/bachelor/ManagementWebAppMVC/Views/Shared/Error.cshtml]
+[E:/Bachelor-GIT/new-repo/bachelor/ManagementWebAppMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vbacc/source/repos/newVersion/bachelor/ManagementWebAppMVC/Views/Shared/_MainMenu.cshtml]
+[E:/Bachelor-GIT/new-repo/bachelor/ManagementWebAppMVC/Views/Shared/_MainMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vbacc/source/repos/newVersion/bachelor/ManagementWebAppMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Bachelor-GIT/new-repo/bachelor/ManagementWebAppMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vbacc/source/repos/newVersion/bachelor/ManagementWebAppMVC/Views/_ViewImports.cshtml]
+[E:/Bachelor-GIT/new-repo/bachelor/ManagementWebAppMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vbacc/source/repos/newVersion/bachelor/ManagementWebAppMVC/Views/_ViewStart.cshtml]
+[E:/Bachelor-GIT/new-repo/bachelor/ManagementWebAppMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/vbacc/source/repos/newVersion/bachelor/ManagementWebAppMVC/Views/Shared/_Layout.cshtml]
+[E:/Bachelor-GIT/new-repo/bachelor/ManagementWebAppMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-69agv6iuqe

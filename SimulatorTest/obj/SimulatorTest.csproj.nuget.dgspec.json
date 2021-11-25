@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\SimulatorTest\\SimulatorTest.csproj": {}
+    "E:\\Bachelor-GIT\\new-repo\\bachelor\\SimulatorTest\\SimulatorTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
+    "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
+        "projectUniqueName": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
         "projectName": "Bachelor.Common",
-        "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
-        "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\obj\\",
+        "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
+        "packagesPath": "C:\\Users\\Dani\\.nuget\\packages\\",
+        "outputPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,17 +71,20 @@
         }
       }
     },
-    "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\SimulatorTest\\SimulatorTest.csproj": {
+    "E:\\Bachelor-GIT\\new-repo\\bachelor\\SimulatorTest\\SimulatorTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
+        "projectUniqueName": "E:\\Bachelor-GIT\\new-repo\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
         "projectName": "SimulatorTest",
-        "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
-        "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\SimulatorTest\\obj\\",
+        "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\SimulatorTest\\SimulatorTest.csproj",
+        "packagesPath": "C:\\Users\\Dani\\.nuget\\packages\\",
+        "outputPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\SimulatorTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,8 +98,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
-                "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
+              "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
+                "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
               }
             }
           }

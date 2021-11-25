@@ -980,7 +980,7 @@
       ]
     },
     "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+      "sha512": "EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
       "type": "package",
       "path": "microsoft.csharp/4.5.0",
       "files": [
@@ -1892,7 +1892,7 @@
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "sha512": "MNcaYxUJvUcoXOa+jgKl/GDw/Mh+wMrxDjW4dre7qrp35LUGTjUBNtZsNjxsWX592ocdyqt1X5hMJB+5OStoYw==",
       "type": "package",
       "path": "system.numerics.vectors/4.5.0",
       "files": [
@@ -2046,7 +2046,7 @@
       ]
     },
     "System.Security.Cryptography.Cng/4.5.0": {
-      "sha512": "WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+      "sha512": "O4tqXxWCD8y1IU1VTgzbuBFwoRahrADhDUxHjwezhHCsqyFNyQ5EytjWBxu0EsZuH14b4UO2pFkG063K2h/9Ug==",
       "type": "package",
       "path": "system.security.cryptography.cng/4.5.0",
       "files": [
@@ -2312,7 +2312,7 @@
       ]
     },
     "System.ValueTuple/4.5.0": {
-      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "sha512": "fa3P1cPe2SlrjCjJ/yc3mcXkDj4GQORmileNFYBtBZh2qddzwRubagAkj8yz/yF9oLvJVqaZYar9l2SCqNKDJg==",
       "type": "package",
       "path": "system.valuetuple/4.5.0",
       "files": [
@@ -2392,19 +2392,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vbacc\\.nuget\\packages\\": {}
+    "C:\\Users\\Dani\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
+      "projectUniqueName": "E:\\Bachelor-GIT\\new-repo\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
       "projectName": "ManagementWebAppMVC",
-      "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
-      "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\obj\\",
+      "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
+      "packagesPath": "C:\\Users\\Dani\\.nuget\\packages\\",
+      "outputPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\ManagementWebAppMVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dani\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2418,8 +2422,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
-              "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
+            "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
+              "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
             }
           }
         }
