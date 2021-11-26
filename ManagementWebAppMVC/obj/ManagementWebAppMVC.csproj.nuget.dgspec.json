@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Bachelor-GIT\\new-repo\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj": {}
+    "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj": {}
   },
   "projects": {
-    "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
+    "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
+        "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
         "projectName": "Bachelor.Common",
-        "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
-        "packagesPath": "C:\\Users\\Dani\\.nuget\\packages\\",
-        "outputPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\obj\\",
+        "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj",
+        "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,6 +52,22 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
@@ -79,20 +92,17 @@
         }
       }
     },
-    "E:\\Bachelor-GIT\\new-repo\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj": {
+    "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Bachelor-GIT\\new-repo\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
+        "projectUniqueName": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
         "projectName": "ManagementWebAppMVC",
-        "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
-        "packagesPath": "C:\\Users\\Dani\\.nuget\\packages\\",
-        "outputPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\ManagementWebAppMVC\\obj\\",
+        "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\ManagementWebAppMVC.csproj",
+        "packagesPath": "C:\\Users\\vbacc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\ManagementWebAppMVC\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vbacc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,8 +116,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
-                "projectPath": "E:\\Bachelor-GIT\\new-repo\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
+              "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj": {
+                "projectPath": "C:\\Users\\vbacc\\source\\repos\\newVersion\\bachelor\\Bachelor.Common\\Bachelor.Common.csproj"
               }
             }
           }

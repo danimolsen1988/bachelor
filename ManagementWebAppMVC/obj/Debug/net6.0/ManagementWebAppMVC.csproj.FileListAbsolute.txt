@@ -166,3 +166,5 @@ C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Debug\ne
 C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Debug\net6.0\ref\ManagementWebAppMVC.dll
 C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Debug\net6.0\ManagementWebAppMVC.pdb
 C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Debug\net6.0\ManagementWebAppMVC.genruntimeconfig.cache
+C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\bin\Debug\net6.0\EntityFramework.dll

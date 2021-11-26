@@ -41,3 +41,5 @@ E:\Bachelor-GIT\new-repo\bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Comm
 E:\Bachelor-GIT\new-repo\bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.dll
 E:\Bachelor-GIT\new-repo\bachelor\Bachelor.Common\obj\Debug\net6.0\ref\Bachelor.Common.dll
 E:\Bachelor-GIT\new-repo\bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.pdb
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\bin\Debug\net6.0\Bachelor.Common.runtimeconfig.json
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Debug\net6.0\Bachelor.Common.genruntimeconfig.cache

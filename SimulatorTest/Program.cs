@@ -1,5 +1,8 @@
 ﻿using Bachelor.Common;
 using Bachelor.Common.Models;
+//using SimulatorTest.DataModels;
+//using Bachelor.Common.DataModels;
+using System.Linq;
 
 namespace SimulatorTest
 {
@@ -15,41 +18,40 @@ namespace SimulatorTest
         private static readonly object _lock = new object();
 
         static async Task Main(string[] args) {
-            Console.WriteLine("Hello, World!");
+            
+            Console.WriteLine("Simulation tool started!");
 
-            using (var context = new SqlDBContext()
-
-            // Handle Control+C or Control+Break.
+            //Handle Control+C or Control+Break.
             Console.CancelKeyPress += (o, e) =>
-            {                
+            {
                 Console.WriteLine("Stopped generator");
                 Cancel();
 
-                // Allow the main thread to continue and exit...
-                WaitHandle.Set();
+               // Allow the main thread to continue and exit...
+               WaitHandle.Set();
             };
 
             try
             {
-                //Make sure devices exists in iothub - Only using a single device for simulated data
-                var deviceKey = await DeviceManager.RegisterDeviceAsync(connString, DataGenerator.GetDeviceId());
-
-                //SimulatedDevice simulatedDevice = new SimulatedDevice(DeviceManager.HostName, "deviceID", deviceKey);
-                _simulatedDevice = new SimulatedDevice(DeviceManager.HostName, DataGenerator.GetDeviceId(), deviceKey);
-
-                //I should print the information that is created!!!
-
-                await _simulatedDevice.RunSimulationAsync();
-
-
-                // await simulatedDevice.RunSimulationAsync();
+                //check if the device is white listed
+                if (Helpers.IsDeviceWhiteListed(DataGenerator.GetDeviceId())){
+                    //Make sure devices exists in iothub - Only using a single device for simulated data
+                    var deviceKey = await DeviceManager.RegisterDeviceAsync(connString, DataGenerator.GetDeviceId());
+                    _simulatedDevice = new SimulatedDevice(DeviceManager.HostName, DataGenerator.GetDeviceId(), deviceKey);
+                    await _simulatedDevice.RunSimulationAsync();
+                }
+                else {
+                    Console.WriteLine("Simulation tool started!");
+                }
+                
             }
             catch (OperationCanceledException)
             {
                 //stopping
                 Console.WriteLine("Canceled");
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 Console.WriteLine(ex.ToString());
             }
             Cancel();

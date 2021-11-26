@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bachelor.Common.DataModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,19 @@ namespace Bachelor.Common
             }
 
             return eventHubsConnectionString;
+        }
+
+        /// <summary>
+        /// Check if a device exists in the system
+        /// </summary>
+        /// <param name="deviceId">device to verify</param>
+        /// <returns></returns>
+        public static bool IsDeviceWhiteListed(string deviceId) {
+            using (powerconContext context = new powerconContext()) { 
+                var devices = context.Devices.Where(e => e.DeviceId.Equals(deviceId));
+                return devices.Count() > 0;
+
+            }
         }
     }
 }
