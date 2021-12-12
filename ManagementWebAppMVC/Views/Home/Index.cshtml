@@ -41,20 +41,11 @@
 @section Scripts {
     <script>
   $(function () {
-
-     //Initialize Select2 Elements
-    //$('.select2').select2()
-
-    //Initialize Select2 Elements
-    //$('.select2bs4').select2({
-    //  theme: 'bootstrap4'
-    //})
     $('.select2bs4').select2({
         ajax: {
             url: '@Url.Action("GetAllDevices")',
             dataType: 'json',
-            processResults: function (data) {
-                // Transforms the top-level key of the response object from 'items' to 'results'                
+            processResults: function (data) {                               
                 return {                    
                     results: data
                 };
@@ -62,13 +53,8 @@
         }
     });
 
-  $('.select2bs4').on("select2:selecting", function(e) { 
-   // what you would like to happen
-   //var data = e.params.data; //not the correct way!
+  $('.select2bs4').on("select2:selecting", function(e) {    
    var data1 = e.params.args.data;
-   
-   //updateData();
-
    $.ajax({
         url: '@Url.Action("GetAllTelemetryForDevice")',
         type: 'POST',
@@ -79,46 +65,14 @@
             updateData(data);
         }
    });
-
-
   });
 
     /* ChartJS
      * -------
      * Here we will create a few charts using ChartJS
      */
-
-   
-   
-    //var areaChartData = {
-    //  labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-    //  datasets: [
-    //    {
-    //      label               : 'Digital Goods',
-    //      backgroundColor     : 'rgba(60,141,188,0.9)',
-    //      borderColor         : 'rgba(60,141,188,0.8)',
-    //      pointRadius          : false,
-    //      pointColor          : '#3b8bba',
-    //      pointStrokeColor    : 'rgba(60,141,188,1)',
-    //      pointHighlightFill  : '#fff',
-    //      pointHighlightStroke: 'rgba(60,141,188,1)',
-    //      data                : [28, 48, 40, 19, 86, 27, 90]
-    //    },
-    //    {
-    //      label               : 'Electronics',
-    //      backgroundColor     : 'rgba(210, 214, 222, 1)',
-    //      borderColor         : 'rgba(210, 214, 222, 1)',
-    //      pointRadius         : false,
-    //      pointColor          : 'rgba(210, 214, 222, 1)',
-    //      pointStrokeColor    : '#c1c7d1',
-    //      pointHighlightFill  : '#fff',
-    //      pointHighlightStroke: 'rgba(220,220,220,1)',
-    //      data                : [65, 59, 80, 81, 56, 55, 40]
-    //    },
-    //  ]
-    //}
-
-    var areaChartData = {
+    //Empty dataset - set colors etc.
+    var chartData = {
       labels  : [],
       datasets: [
         {
@@ -134,7 +88,7 @@
       ]
     }
 
-    var areaChartOptions = {
+    var chartOptions = {
       maintainAspectRatio : false,
       responsive : true,
       legend: {
@@ -150,6 +104,16 @@
             labelString: 'Time'
          },
          type: 'time',
+         time: {
+            tooltipFormat: 'YYYY-MM-DD HH:mm:SS',
+            unit: 'second',
+            displayFormats: {
+            millisecond: 'YYYY-MM-DD HH:mm:ss.SSS',
+            second: 'YYYY-MM-DD HH:mm:SS',
+            minute: 'YYYY-MM-DD HH:mm',
+            hour: 'YYYY-MM-DD HH'
+            },
+        },
          distribution: 'series',         
         }],        
         yAxes: [{
@@ -163,23 +127,10 @@
         }]
       }
     }
-
-    //time: {
-    //        tooltipFormat: 'YYYY-MM-dd HH:mm:SS',
-    //        displayFormats: {
-    //            millisecond: 'HH:mm:ss.SSS',
-    //            second: 'HH:mm:ss',
-    //            minute: 'HH:mm',
-    //            hour: 'HH'
-    //        },
-    //  },
-
-    //-------------
-    //- LINE CHART -
-    //--------------
+        
     var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
-    var lineChartOptions = $.extend(true, {}, areaChartOptions)
-    var lineChartData = $.extend(true, {}, areaChartData)
+    var lineChartOptions = $.extend(true, {}, chartOptions)
+    var lineChartData = $.extend(true, {}, chartData)
     lineChartData.datasets[0].fill = false;
     //lineChartData.datasets[1].fill = false;
     lineChartOptions.datasetFill = false
@@ -189,16 +140,6 @@
       data: lineChartData,
       options: lineChartOptions
     })
-
-    //function updateData11() {
-    //    data2 = {
-            
-    //    };
-    //    lineChart.data.labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September'];
-    //    lineChart.data.datasets[0].data = [28, 48, 40, 19, 86, 27, 90, 120, 8];
-    //    lineChart.data.datasets[0].label = 'My device';
-    //    lineChart.update();
-    //}
 
     function updateData(data) {
         lineChart.data.labels = data.labels;

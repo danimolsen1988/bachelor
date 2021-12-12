@@ -40,10 +40,10 @@ namespace SimulatorTest
         }
 
         private async Task SendDataToHub(CancellationToken cancellationToken) {
-            //TODO 1
             while (!_localCancellationSource.IsCancellationRequested) {
                 //Generate Data
                 OpsDeviceTelemetry deviceTelemetry = DataGenerator.GenerateData();
+
                 //Send Data
                 await SendEvent(JsonConvert.SerializeObject(deviceTelemetry), cancellationToken).ConfigureAwait(false);
                 await Task.Delay(CycleTime);
@@ -51,16 +51,15 @@ namespace SimulatorTest
         }
 
         private async Task SendEvent(string message, CancellationToken cancellationToken) {
-
             using (var eventData = new Message(Encoding.ASCII.GetBytes(message))) {
-                // Send telemetry to IoT Hub. All messages are partitioned by the Device Id, guaranteeing message ordering.
+                // Send telemetry to IoT Hub. All messages are partitioned by the Device Id
                 var sendEventAsync = _DeviceClient?.SendEventAsync(eventData, cancellationToken);
                 if (sendEventAsync != null) {
                     await sendEventAsync.ConfigureAwait(false);
                 }
             }
             //print json to the console
-            Program.PrintConsole(message);
+            Program.PrintConsole(message);            
         }
     }
 }

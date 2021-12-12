@@ -44,29 +44,18 @@ namespace ManagementWebAppMVC.Services
         }
         
 
-        public async Task<IEnumerable<T>> GetItemsAsync<T>(Expression<Func<T, bool>> predicate, int? skip = null, int? take = null, string partitionKey = null) where T : class
+        public async Task<IEnumerable<T>> GetItemsAsync<T>(Expression<Func<T, bool>> predicate, string partitionKey = null) where T : class
         {
-            FeedIterator<T> setIterator;
-            var query = this._container.GetItemLinqQueryable<T>(requestOptions: !string.IsNullOrWhiteSpace(partitionKey) ? new QueryRequestOptions { PartitionKey = new PartitionKey(partitionKey) } : null);
-
-            // Implement paging:
-            if (skip.HasValue && take.HasValue)
-            {
-                setIterator = query.Where(predicate).Skip(skip.Value).Take(take.Value).ToFeedIterator();
-            }
-            else
-            {
-                setIterator = take.HasValue ? query.Where(predicate).Take(take.Value).ToFeedIterator() : query.Where(predicate).ToFeedIterator();
-            }
-
+            
+            var query = this._container.GetItemLinqQueryable<T>(requestOptions: !string.IsNullOrWhiteSpace(partitionKey) ? 
+                new QueryRequestOptions { PartitionKey = new PartitionKey(partitionKey) } : null);
+            FeedIterator<T> setIterator = query.Where(predicate).ToFeedIterator();            
             var results = new List<T>();
-            while (setIterator.HasMoreResults)
-            {
+            while (setIterator.HasMoreResults){
                 var response = await setIterator.ReadNextAsync();
 
                 results.AddRange(response.ToList());
             }
-
             return results;
         }
 
@@ -78,7 +67,8 @@ namespace ManagementWebAppMVC.Services
             var cosmosDbConnectionString = new CosmosDbConnectionString(connectionString);
 
 
-            CosmosClientBuilder clientBuilder = new CosmosClientBuilder(cosmosDbConnectionString.ServiceEndpoint.OriginalString, cosmosDbConnectionString.AuthKey);
+            CosmosClientBuilder clientBuilder = new CosmosClientBuilder(cosmosDbConnectionString.ServiceEndpoint.OriginalString, 
+                cosmosDbConnectionString.AuthKey);
             CosmosClient client = clientBuilder
                 .WithConnectionModeDirect()
                 .Build();
@@ -86,6 +76,29 @@ namespace ManagementWebAppMVC.Services
 
 
             return cosmosDbService;
+        }
+
+        public async Task<IEnumerable<T>> GetItemsAsyncBackup<T>(Expression<Func<T, bool>> predicate, int? skip = null, int? take = null, string partitionKey = null) where T : class
+        {
+            FeedIterator<T> setIterator;
+            var query = this._container.GetItemLinqQueryable<T>(requestOptions: !string.IsNullOrWhiteSpace(partitionKey) ? new QueryRequestOptions { PartitionKey = new PartitionKey(partitionKey) } : null);
+            // Implement paging:
+            if (skip.HasValue && take.HasValue)
+            {
+                setIterator = query.Where(predicate).Skip(skip.Value).Take(take.Value).ToFeedIterator();
+            }
+            else
+            {
+                setIterator = take.HasValue ? query.Where(predicate).Take(take.Value).ToFeedIterator() : query.Where(predicate).ToFeedIterator();
+            }
+            var results = new List<T>();
+            while (setIterator.HasMoreResults)
+            {
+                var response = await setIterator.ReadNextAsync();
+
+                results.AddRange(response.ToList());
+            }
+            return results;
         }
     }
 }

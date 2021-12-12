@@ -1,3 +1,4 @@
+using Bachelor.Common.DataModels;
 using ManagementWebAppMVC.Services;
 using Microsoft.Extensions.Configuration;
 
@@ -6,8 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddSingleton<ICosmosDBService>(CosmosDBService.InitializeCosmosClientInstance(builder.Configuration)); //CHECK IF THIS IS CORRECT !!!!!
+builder.Services.AddSingleton<ICosmosDBService>(CosmosDBService.InitializeCosmosClientInstance(builder.Configuration));
 //builder.Services.AddDbContext<>
+builder.Services.AddDbContext<powerconContext>();
 
 var app = builder.Build();
 

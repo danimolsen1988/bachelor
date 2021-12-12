@@ -27,3 +27,5 @@ C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6
 C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.dll
 C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\ref\Bachelor.Common.dll
 C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.pdb
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\bin\Release\net6.0\Bachelor.Common.runtimeconfig.json
+C:\Users\vbacc\source\repos\newVersion\bachelor\Bachelor.Common\obj\Release\net6.0\Bachelor.Common.genruntimeconfig.cache

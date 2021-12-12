@@ -13,13 +13,13 @@ namespace Bachelor.Common
         private static readonly Random random = new Random();
 
         public static OpsDeviceTelemetry GenerateData() { 
-            //partitionKey is handled in azure function before inserting into DB
+            
             OpsDeviceTelemetry opsDeviceTelemetry = new OpsDeviceTelemetry();
             opsDeviceTelemetry.deviceId = GetDeviceId();
             opsDeviceTelemetry.timestamp = DateTime.UtcNow;            
             opsDeviceTelemetry.measurements = new List<SubDeviceTelemetry>();
             //important that this is consistent
-            opsDeviceTelemetry.partitionKey = $"{opsDeviceTelemetry.deviceId}--{DateTime.UtcNow:yyyy-MM-dd}";
+            opsDeviceTelemetry.partitionKey = $"{opsDeviceTelemetry.deviceId}-{DateTime.UtcNow:yyyy-MM-dd}";
 
             foreach (var item in GetAllSeedData())
             {

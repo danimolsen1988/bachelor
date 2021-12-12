@@ -37,11 +37,14 @@ namespace SimulatorTest
                 if (Helpers.IsDeviceWhiteListed(DataGenerator.GetDeviceId())){
                     //Make sure devices exists in iothub - Only using a single device for simulated data
                     var deviceKey = await DeviceManager.RegisterDeviceAsync(connString, DataGenerator.GetDeviceId());
+
+                    Console.WriteLine("devicekey " + deviceKey);
+
                     _simulatedDevice = new SimulatedDevice(DeviceManager.HostName, DataGenerator.GetDeviceId(), deviceKey);
                     await _simulatedDevice.RunSimulationAsync();
                 }
                 else {
-                    Console.WriteLine("Simulation tool started!");
+                    Console.WriteLine("No device registred with Id " + DataGenerator.GetDeviceId());
                 }
                 
             }

@@ -7,6 +7,8 @@ C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Release\
 C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Release\net6.0\PubTmp\Out\ManagementWebAppMVC.runtimeconfig.json
 C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Release\net6.0\PubTmp\Out\ManagementWebAppMVC.pdb
 C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Release\net6.0\PubTmp\Out\Azure.Core.dll
+C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Release\net6.0\PubTmp\Out\EntityFramework.SqlServer.dll
+C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Release\net6.0\PubTmp\Out\EntityFramework.dll
 C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Release\net6.0\PubTmp\Out\System.Web.Mvc.dll
 C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Release\net6.0\PubTmp\Out\System.Web.Razor.dll
 C:\Users\vbacc\source\repos\newVersion\bachelor\ManagementWebAppMVC\obj\Release\net6.0\PubTmp\Out\System.Web.Helpers.dll
