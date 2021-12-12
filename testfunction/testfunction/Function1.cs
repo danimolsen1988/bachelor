@@ -21,25 +21,23 @@ namespace testfunction
 
         [FunctionName(nameof(IoTHubTrig))]
         public static async Task IoTHubTrig([IoTHubTrigger("messages/events", Connection = "IoTHubConnection")]EventData[] messages, 
-            [CosmosDB(databaseName:"powercon",collectionName:"telemetry",ConnectionStringSetting = "CosmosDBConnection")] IAsyncCollector<OpsDeviceTelemetry> opsTelemetryOut, ILogger log)
+            [CosmosDB(databaseName:"powercon",collectionName:"telemetry",ConnectionStringSetting = "CosmosDBConnection")] 
+            IAsyncCollector<OpsDeviceTelemetry> opsTelemetryOut, ILogger log)
         {
+            //Catch all exceptions before throwing
             var exceptions = new List<Exception>();
             log.LogInformation($"C# IoT Hub trigger function processing: {messages.Length}");
 
-            foreach (var message in messages)
-            {
-                try
-                {                    
+            foreach (var message in messages){
+                try{
+                    //Get Single Message
                     var messageBody = Encoding.UTF8.GetString(message.Body.Array, message.Body.Offset, message.Body.Count);
                     var telemetry = JsonConvert.DeserializeObject<OpsDeviceTelemetry>(messageBody);
 
-                    //SAVE TO DATABASE
-                    await opsTelemetryOut.AddAsync(telemetry);
-                    
+                    //Save to Cosmos DB
+                    await opsTelemetryOut.AddAsync(telemetry);                    
                 }
-                catch (Exception e)
-                {
-
+                catch (Exception e){
                     exceptions.Add(e);
                 }
 
